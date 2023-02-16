@@ -8,6 +8,8 @@
   --index: calc(1vw + 1vh);
   --color-title: #f4efec;
   --color-text: #cdc6c3;
+  --title-font: outfit;
+  --vertical-gap: calc(var(--index) * 7);
 }
 
 @font-face {
@@ -25,13 +27,86 @@ body {
   background-size: 50px;
   color: #fafafa;
   font-family: raleway;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .header {
   
 }
 
-.hero {
+.header__hero {
   width: calc(var(--index) * 35);
+  position: absolute;
+  left: 37vw;
+  top: 8vh;
+}
+
+.container {
+  padding: 0 7vw;
+}
+
+.title-block {
+  height: 100vh;
+}
+
+.main-title {
+  font-family: var(--title-font);
+  font-size: calc(var(--index) * 8);
+  line-height: 0.9;
+  position: absolute;
+  width: min-content;
+  bottom: 10vh;
+}
+
+.portfolio {
+
+}
+
+.gallery {
+  display: flex;
+  padding: calc(var(--index) * 8) 0;
+}
+
+.gallery__col {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gallery__left {
+  margin-top: calc(var(--vertical-gap) * 1.75);
+}
+
+.gallery__right {
+
+}
+
+.gallery__right .gallery__item {
+  margin: 0;
+  margin-top: var(--vertical-gap);
+}
+
+.gallery__item {
+  max-width: calc(var(--index) * 21);
+  margin-bottom: var(--vertical-gap);
+  max-height: 90vh;
+  border-radius: 8px;
+}
+
+.gallery__text-title {
+  font-style: var(--title-font);
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: var(--color-title);
+  margin-bottom: 1.5rem;
+}
+
+.gallery__text-block {
+  color: var(--color-text);
+  position: relative;
+}
+
+.gallery__text {
+  line-height: 1.75rem;
 }
