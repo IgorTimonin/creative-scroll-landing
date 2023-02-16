@@ -14,78 +14,94 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <header class="header">
-      <img class="header__hero" src="img/hero.png" alt="hero portrait" />
-      <div class="container">
-        <div class="title-block">
-          <h1 class="main-title">creative scroll</h1>
-        </div>
-      </div>
-    </header>
-
-    <main class="portfolio">
-      <div class="container">
-        <section class="gallery">
-          <div class="gallery__col gallery__left">
-            <img
-              class="gallery__item"
-              src="img/work/1.jpg"
-              alt="gallery image 1"
-            />
-            <img
-              class="gallery__item"
-              src="img/work/2.jpg"
-              alt="gallery image 2"
-            />
-
-            <div class="gallery__text-block gallery__item">
-              <h2 class="gallery__text-title">
-                Creative floating scroll with amazing parallax effect
-              </h2>
-              <p class="gallery__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero a
-                autem reprehenderit temporibus scrolling
-              </p>
+    <div class="wrapper">
+      <div class="content">
+        <header class="header">
+          <img
+            data-speed="0.6"
+            class="header__hero"
+            src="img/hero.png"
+            alt="hero portrait"
+          />
+          <div class="container">
+            <div data-speed="0.75" class="title-block">
+              <h1 class="main-title">creative scroll</h1>
             </div>
-
-            <img
-              class="gallery__item"
-              src="img/work/6.jpg"
-              alt="gallery image 3"
-            />
           </div>
+        </header>
 
-          <div class="gallery__col gallery__right">
+        <main class="portfolio">
+          <div class="container">
+            <section class="gallery">
+              <div data-speed="0.9" class="gallery__col gallery__left">
+                <img
+                  class="gallery__item"
+                  src="img/work/1.jpg"
+                  alt="gallery image 1"
+                />
+                <img
+                  class="gallery__item"
+                  src="img/work/2.jpg"
+                  alt="gallery image 2"
+                />
 
-            <div class="gallery__text-block gallery__item">
-              <h2 class="gallery__text-title">
-                Creative floating scroll with amazing parallax effect
-              </h2>
-              <p class="gallery__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero a
-                autem reprehenderit temporibus scrolling
-              </p>
-            </div>
+                <div class="gallery__text-block gallery__item">
+                  <h2 class="gallery__text-title">
+                    Creative floating scroll with amazing parallax effect
+                  </h2>
+                  <p class="gallery__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vero a autem reprehenderit temporibus scrolling
+                  </p>
+                </div>
 
-            <img
-              class="gallery__item"
-              src="img/work/4.jpg"
-              alt="gallery image 4"
-            />
-            <img
-              class="gallery__item"
-              src="img/work/5.jpg"
-              alt="gallery image 5"
-            />
-            <img
-              class="gallery__item"
-              src="img/work/3.jpg"
-              alt="gallery image 6"
-            />
-            
+                <img
+                  class="gallery__item"
+                  src="img/work/6.jpg"
+                  alt="gallery image 3"
+                />
+              </div>
+
+              <div data-speed="1.1" class="gallery__col gallery__right">
+                <div class="gallery__text-block gallery__item">
+                  <h2 class="gallery__text-title">
+                    Creative floating scroll with amazing parallax effect
+                  </h2>
+                  <p class="gallery__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vero a autem reprehenderit temporibus scrolling
+                  </p>
+                </div>
+
+                <img
+                  class="gallery__item"
+                  src="img/work/4.jpg"
+                  alt="gallery image 4"
+                />
+                <img
+                  class="gallery__item"
+                  src="img/work/5.jpg"
+                  alt="gallery image 5"
+                />
+                <img
+                  class="gallery__item"
+                  src="img/work/3.jpg"
+                  alt="gallery image 6"
+                />
+              </div>
+            </section>
           </div>
-        </section>
+        </main>
+        <footer class="footer container">
+          <div class="footer__copyright">
+            2023 © made with <span style="color:#E13E35">&#9829</span> by Игорь Тимонин
+          </div>
+          <div class="footer__links">
+            <a class="footer__link" href="https://t.me/IgorTimonin">Telegram</a>
+            <a class="footer__link" href="https://github.com/IgorTimonin">Github</a>
+          </div>
+        </footer>
       </div>
-    </main>
+    </div>
   </body>
 </html>

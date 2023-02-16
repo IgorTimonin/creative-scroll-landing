@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+a,
+:visited,
+:focus,
+:active {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
 :root {
   --index: calc(1vw + 1vh);
   --color-title: #f4efec;
@@ -30,8 +38,14 @@ body {
   overflow-x: hidden;
 }
 
+.content,
+.header__hero,
+.title-block,
+.gallery__col {
+  will-change: transform;
+}
+
 .header {
-  
 }
 
 .header__hero {
@@ -59,7 +73,6 @@ body {
 }
 
 .portfolio {
-
 }
 
 .gallery {
@@ -79,7 +92,6 @@ body {
 }
 
 .gallery__right {
-
 }
 
 .gallery__right .gallery__item {
@@ -109,4 +121,23 @@ body {
 
 .gallery__text {
   line-height: 1.75rem;
+}
+
+.footer {
+  display: flex;
+  justify-content:space-between;
+  padding-bottom: 1rem;
+}
+
+.footer__copyright {
+  color: var(--color-text);
+  font-style: var(--title-font);
+}
+
+.footer__link {
+  padding-right: 1rem;
+}
+
+.footer__link:hover {
+  color: #E13E35;
 }
