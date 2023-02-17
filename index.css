@@ -121,6 +121,16 @@ body {
   line-height: 1.75rem;
 }
 
+.gallery__logo {
+  background-image: url(/img/Company.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 200px;
+  height: 50px;
+  justify-self: center;
+  margin-top: 100px;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -218,6 +228,7 @@ body {
   }
   .gallery {
     padding-top: 0;
+    padding-bottom: 150px;
   }
   .gallery__left {
     margin: 0;

@@ -53,7 +53,7 @@ if (true) {
         x: 0,
         scrollTrigger: {
           trigger: item,
-          start: '-900',
+          start: '-600',
           end: '0',
           scrub: true,
         },
