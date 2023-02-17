@@ -1,6 +1,7 @@
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-if (ScrollTrigger.isTouch !== 1) {
+if (true) {
+  // (ScrollTrigger.isTouch !== 1) {
   ScrollSmoother.create({
     wrapper: '.wrapper',
     content: '.content',
@@ -27,7 +28,7 @@ if (ScrollTrigger.isTouch !== 1) {
   itemsLeft.forEach((item) => {
     gsap.fromTo(
       item,
-      { x: -100, opacity: 0 },
+      { x: -80, opacity: 0 },
       {
         opacity: 1,
         x: 0,
@@ -46,13 +47,13 @@ if (ScrollTrigger.isTouch !== 1) {
   itemsRight.forEach((item) => {
     gsap.fromTo(
       item,
-      { x: 100, opacity: 0 },
+      { x: 80, opacity: 0 },
       {
         opacity: 1,
         x: 0,
         scrollTrigger: {
           trigger: item,
-          start: '-500',
+          start: '-900',
           end: '0',
           scrub: true,
         },
